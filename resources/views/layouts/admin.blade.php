@@ -1,263 +1,541 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <title>POS</title>
-    <link rel="stylesheet" href="/ninja/light/assets/styles/style.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-    <!-- mCustomScrollbar -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+        <link href="{{asset('q/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
+    <!-- Bootstrap Core Css -->
+    <link href="{{asset('q/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
 
-    <!-- Waves Effect -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/waves/waves.min.css">
+    <!-- Waves Effect Css -->
+    <link href="{{asset('q/plugins/node-waves/waves.css')}}" rel="stylesheet" />
 
-    <!-- Sweet Alert -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/sweet-alert/sweetalert.css">
-    
-    <!-- Color Picker -->
-    <link rel="stylesheet" href="/ninja/light/assets/color-switcher/color-switcher.min.css">
+    <!-- Animation Css -->
+    <link href="{{asset('q/plugins/animate-css/animate.css')}}" rel="stylesheet" />
 
+    <!-- Morris Chart Css-->
+    <link href="{{asset('q/plugins/morrisjs/morris.css')}}" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/datatables/media/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="/ninja/font-awesome/css/all.css" />
+    <!-- Custom Css -->
+    <link href="{{asset('q/css/style.css')}}" rel="stylesheet">
 
-    <link rel="stylesheet" href="/ninja/light/assets/dataTables1.css">
-    <link rel="stylesheet" href="/ninja/light/assets/dataTables2.css">
-    <link rel="stylesheet" type="text/css" href="/ninja/assets/custom.css">
-
-    <!-- Main Styles -->
-    <link rel="stylesheet" href="/ninja/light/assets/styles/style.min.css">
-
-    <!-- mCustomScrollbar -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
-
-    <!-- Waves Effect -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/waves/waves.min.css">
-
-    <!-- Sweet Alert -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/sweet-alert/sweetalert.css">
-    
-    <!-- Percent Circle -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/percircle/css/percircle.css">
-
-    <!-- Chartist Chart -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/chart/chartist/chartist.min.css">
-
-    <!-- FullCalendar -->
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/fullcalendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="/ninja/light/assets/plugin/fullcalendar/fullcalendar.print.css" media='print'>
-
-    <!-- Color Picker -->
-    <link rel="stylesheet" href="/ninja/light/assets/color-switcher/color-switcher.min.css">
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="{{asset('q/css/themes/all-themes.css')}}" rel="stylesheet" />
 </head>
 
-<body>
-<div class="main-menu">
-    <header class="header">
-        <a href="index.html" class="logo">Admin</a>
-        <button type="button" class="button-close fa fa-times js__menu_close"></button>
-        <div class="user">
-
-        <?php 
+<body class="theme-red">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="index.html">ADMINBSB - MATERIAL DESIGN</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    <!-- #END# Call Search -->
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">notifications</i>
+                            <span class="label-count">7</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">NOTIFICATIONS</li>
+                            <li class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-light-green">
+                                                <i class="material-icons">person_add</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4>12 new members joined</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 14 mins ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-cyan">
+                                                <i class="material-icons">add_shopping_cart</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4>4 sales made</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 22 mins ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-red">
+                                                <i class="material-icons">delete_forever</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4><b>Nancy Doe</b> deleted account</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-orange">
+                                                <i class="material-icons">mode_edit</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4><b>Nancy</b> changed name</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 2 hours ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-blue-grey">
+                                                <i class="material-icons">comment</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4><b>John</b> commented your post</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 4 hours ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-light-green">
+                                                <i class="material-icons">cached</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4><b>John</b> updated status</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-purple">
+                                                <i class="material-icons">settings</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4>Settings updated</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> Yesterday
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="javascript:void(0);">View All Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Notifications -->
+                    <!-- Tasks -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">flag</i>
+                            <span class="label-count">9</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">TASKS</li>
+                            <li class="body">
+                                <ul class="menu tasks">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Footer display issue
+                                                <small>32%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 32%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Make new buttons
+                                                <small>45%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Create new dashboard
+                                                <small>54%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-teal" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 54%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Solve transition issue
+                                                <small>65%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Answer GitHub questions
+                                                <small>92%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 92%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="javascript:void(0);">View All Tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Tasks -->
+                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                    <img src="{{asset('q/images/user.png')}}" width="48" height="48" alt="User" />
+                </div>
+                 <?php 
             $name = \App\User::where('id', Auth::user()->id)->first();
          ?>
-            <a href="#" class="avatar"><img src="/foto/admin.jpg" alt=""><span class="status online"></span></a>
-            <h5 class="name"><a href="profile.html">{{$name->name}}</a></h5>
-            <h5 class="position">Admin</h5>
-            <!-- /.name -->
-            <div class="control-wrap js__drop_down">
-                <i class="fa fa-caret-down js__drop_down_button"></i>
-                <div class="control-list">
-                    <div class="control-item"><a href="profile.html"><i class="fa fa-user"></i> Profile</a></div>
-                    <div class="control-item"><a href="#"><i class="fa fa-gear"></i> Settings</a></div>
-                    <div class="control-item"><a href="{{url('loginuser')}}"><i class="fa fa-sign-out"></i> Log out</a></div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{$name->name}}</div>
+                    <div class="email">SuperAdmin</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="{{asset('loginuser')}}"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- /.control-list -->
             </div>
-            <!-- /.control-wrap -->
-        </div>
-        <!-- /.user -->
-    </header>
-    <!-- /.header -->
-    <div class="content">
-
-        <div class="navigation">
-            <h5 class="title">Navigation</h5>
-            <!-- /.title -->
-            <ul class="menu js__accordion">
-                <li class="current">
-                    <a class="waves-effect" href="/admin"><i class="menu-icon fa fa-home"></i><span>Dashboard</span></a>
-                </li>
-            </ul>
-            <!-- /.menu js__accordion -->
-            
-            <!-- /.title -->
-            <ul class="menu js__accordion">
-                <li>
-                    <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-th-large"></i><span>Master</span><span class="menu-arrow fa fa-angle-down"></span></a>
-                    <ul class="sub-menu js__content">
-                        <li><a href="/kategori">Kategori Barang</a></li>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="material-icons">home</i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">widgets</i>
+                            <span>Master</span>
+                        </a>
+                        <ul class="ml-menu">
+                          <li><a href="/kategori">Kategori Barang</a></li>
                         <li><a href="/unit">Unit</a></li>
                         <li><a href="/diskon">Diskon</a></li>
                         <li><a href="/cur">Mata Uang</a></li>
                         <li><a href="/laba">Laba Keuntungan</a></li>
                         <li><a href="/stokppn">Stok Minimal & PPN</a></li>
-                    </ul>
-                    <!-- /.sub-menu js__content -->
-                </li>
-                <li>
-                    <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-th-large"></i><span>Inventory</span><span class="menu-arrow fa fa-angle-down"></span></a>
-                    <ul class="sub-menu js__content">
-                        <li><a href="/barang">Barang</a></li>
+                                </ul>
+                            </li>
+                              <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">widgets</i>
+                            <span>Inventory</span>
+                        </a>
+                        <ul class="ml-menu">
+                         <li><a href="/barang">Barang</a></li>
                         <li><a href="/laporan_barang">Laporan Barang</a></li>
                         <li><a href="/laporan_transaksi">Laporan Transaksi</a></li>
-                    </ul>
-                    <!-- /.sub-menu js__content -->
-                </li>
-            </ul>
-            <!-- /.menu js__accordion -->
-        </div>
-        <!-- /.navigation -->
-    </div>
-    <!-- /.content -->
-</div>
-<!-- /.main-menu -->
+                                </ul>
+                            </li>
 
-<div class="fixed-navbar">
-    <div class="pull-left">
-        <button type="button" class="menu-mobile-button glyphicon glyphicon-menu-hamburger js__menu_mobile"></button>
-        <h1 class="page-title">Home</h1>
-        <!-- /.page-title -->
-    </div>
-    <!-- /.pull-left -->
-    <div class="pull-right">
-        <div class="ico-item">
-            <a href="#" class="ico-item fa fa-search js__toggle_open" data-target="#searchform-header"></a>
-            <form action="#" id="searchform-header" class="searchform js__toggle"><input type="search" placeholder="Search..." class="input-search"><button class="fa fa-search button-search" type="submit"></button></form>
-            <!-- /.searchform -->
-        </div>
-        <!-- /.ico-item -->
-        <div class="ico-item fa fa-arrows-alt js__full_screen"></div>
-        <!-- /.ico-item fa fa-fa-arrows-alt -->
-        <div class="ico-item toggle-hover js__drop_down ">
-            <span class="fa fa-th js__drop_down_button"></span>
-            <div class="toggle-content">
-                <ul>
-                    <li><a href="#"><i class="fa fa-github"></i><span class="txt">Github</span></a></li>
-                    <li><a href="#"><i class="fa fa-bitbucket"></i><span class="txt">Bitbucket</span></a></li>
-                    <li><a href="#"><i class="fa fa-slack"></i><span class="txt">Slack</span></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i><span class="txt">Dribbble</span></a></li>
-                    <li><a href="#"><i class="fa fa-amazon"></i><span class="txt">Amazon</span></a></li>
-                    <li><a href="#"><i class="fa fa-dropbox"></i><span class="txt">Dropbox</span></a></li>
-                </ul>
-                <a href="#" class="read-more">More</a>
             </div>
-            <!-- /.toggle-content -->
-        </div>
-        <!-- /.ico-item -->
-        <a href="{{url('loginuser')}}" class="ico-item fa fa-envelope notice-alarm js__toggle_open" data-target="#message-popup"></a>
-        <a href="{{url('loginuser')}}" class="ico-item pulse"><span class="ico-item fa fa-bell notice-alarm js__toggle_open" data-target="#notification-popup"></span></a>
-        <a href="{{url('loginuser')}}" class="ico-item fa fa-power-off"></a>
-    </div>
-    <!-- /.pull-right -->
-</div>
-<!-- /.fixed-navbar -->
-<!-- #color-switcher -->
-@yield('content')
-<!--/#wrapper -->
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="/ninja/light/assets/script/html5shiv.min.js"></script>
-        <script src="/ninja/light/assets/script/respond.min.js"></script>
-    <![endif]-->
-    <!-- 
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/ninja/light/assets/scripts/jquery.min.js"></script>
-    <script src="/ninja/light/assets/scripts/modernizr.min.js"></script>
-    <script src="/ninja/light/assets/plugin/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/ninja/light/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="/ninja/light/assets/plugin/nprogress/nprogress.js"></script>
-    <script src="/ninja/light/assets/plugin/sweet-alert/sweetalert.min.js"></script>
-    <script src="/ninja/light/assets/plugin/waves/waves.min.js"></script>
-    <!-- Full Screen Plugin -->
-    <script src="/ninja/light/assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
+            <!-- #Menu -->
+            <!-- Footer -->
+        
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li role="presentation" class="active"><a href="#skins" data-toggle="tab">SKINS</a></li>
+                <li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red" class="active">
+                            <div class="red"></div>
+                            <span>Red</span>
+                        </li>
+                        <li data-theme="pink">
+                            <div class="pink"></div>
+                            <span>Pink</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div>
+                            <span>Purple</span>
+                        </li>
+                        <li data-theme="deep-purple">
+                            <div class="deep-purple"></div>
+                            <span>Deep Purple</span>
+                        </li>
+                        <li data-theme="indigo">
+                            <div class="indigo"></div>
+                            <span>Indigo</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div>
+                            <span>Blue</span>
+                        </li>
+                        <li data-theme="light-blue">
+                            <div class="light-blue"></div>
+                            <span>Light Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div>
+                            <span>Cyan</span>
+                        </li>
+                        <li data-theme="teal">
+                            <div class="teal"></div>
+                            <span>Teal</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div>
+                            <span>Green</span>
+                        </li>
+                        <li data-theme="light-green">
+                            <div class="light-green"></div>
+                            <span>Light Green</span>
+                        </li>
+                        <li data-theme="lime">
+                            <div class="lime"></div>
+                            <span>Lime</span>
+                        </li>
+                        <li data-theme="yellow">
+                            <div class="yellow"></div>
+                            <span>Yellow</span>
+                        </li>
+                        <li data-theme="amber">
+                            <div class="amber"></div>
+                            <span>Amber</span>
+                        </li>
+                        <li data-theme="orange">
+                            <div class="orange"></div>
+                            <span>Orange</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div>
+                            <span>Deep Orange</span>
+                        </li>
+                        <li data-theme="brown">
+                            <div class="brown"></div>
+                            <span>Brown</span>
+                        </li>
+                        <li data-theme="grey">
+                            <div class="grey"></div>
+                            <span>Grey</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div>
+                            <span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div>
+                            <span>Black</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
 
-    <!-- Percent Circle -->
-    <script src="/ninja/light/assets/plugin/percircle/js/percircle.js"></script>
+    <section class="content">
+       @yield('content')
+    </section>
 
-    <!-- Google Chart -->
-    <script type="text/javascript" src="/ninja/light/assets/loader.js"></script>
+    <!-- Jquery Core Js -->
+    <script src="{{asset('q/plugins/jquery/jquery.min.js')}}"></script>
 
-    <!-- Chartist Chart -->
-    <script src="/ninja/light/assets/plugin/chart/chartist/chartist.min.js"></script>
-    <script src="/ninja/light/assets/scripts/chart.chartist.init.min.js"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="{{asset('q/plugins/bootstrap/js/bootstrap.js')}}"></script>
 
-    <!-- FullCalendar -->
-    <script src="/ninja/light/assets/plugin/moment/moment.js"></script>
-    <script src="/ninja/light/assets/plugin/fullcalendar/fullcalendar.min.js"></script>
-    <script src="/ninja/light/assets/scripts/fullcalendar.init.js"></script>
+    <!-- Select Plugin Js -->
+    <script src="{{asset('q/plugins/bootstrap-select/js/bootstrap-select.js')}}"></script>
 
-    <script src="/ninja/light/assets/scripts/main.min.js"></script>
-    <script src="/ninja/light/assets/color-switcher/color-switcher.min.js"></script>
+    <!-- Slimscroll Plugin Js -->
+    <script src="{{asset('q/plugins/jquery-slimscroll/jquery.slimscroll.js')}}"></script>
 
+    <!-- Waves Effect Plugin Js -->
+    <script src="{{asset('q/plugins/node-waves/waves.js')}}"></script>
 
-    <script src="/ninja/light/assets/1.js"></script>
-    <script src="/ninja/light/assets/2.js"></script>
-    <script src="/ninja/light/assets/3.js"></script>
-    <script src="/ninja/light/assets/4.js"></script>
-    <script src="/ninja/light/assets/5.js"></script>
-    <script src="/ninja/light/assets/6.js"></script>
-    <script src="/ninja/light/assets/7.js"></script>
-    <script src="/ninja/light/assets/8.js"></script>
-    <script src="/ninja/light/assets/9.js"></script>
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="{{asset('q/plugins/jquery-countto/jquery.countTo.js')}}"></script>
 
+    <!-- Morris Plugin Js -->
+    <script src="{{asset('q/plugins/raphael/raphael.min.js')}}"></script>
+    <script src="{{asset('q/plugins/morrisjs/morris.js')}}"></script>
 
+    <!-- ChartJs -->
+    <script src="{{asset('q/plugins/chartjs/Chart.bundle.js')}}"></script>
 
-    <script src="/ninja/light/assets/plugin/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="/ninja/light/assets/plugin/datatables/media/js/dataTables.bootstrap.min.js"></script>
-    <script src="/ninja/light/assets/plugin/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
-    <script src="/ninja/light/assets/plugin/datatables/extensions/Responsive/js/responsive.bootstrap.min.js"></script>
-    <script src="/ninja/light/assets/scripts/datatables.demo.min.js"></script>
+    <!-- Flot Charts Plugin Js -->
+    <script src="{{asset('q/plugins/flot-charts/jquery.flot.js')}}"></script>
+    <script src="{{asset('q/plugins/flot-charts/jquery.flot.resize.js')}}"></script>
+    <script src="{{asset('q/plugins/flot-charts/jquery.flot.pie.js')}}"></script>
+    <script src="{{asset('q/plugins/flot-charts/jquery.flot.categories.js')}}"></script>
+    <script src="{{asset('q/plugins/flot-charts/jquery.flot.time.js')}}"></script>
 
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="{{asset('q/plugins/jquery-sparkline/jquery.sparkline.js')}}"></script>
 
+    <!-- Custom Js -->
+    <script src="{{asset('q/js/admin.js')}}"></script>
+    <script src="{{asset('q/js/pages/index.js')}}"></script>
 
+    <!-- Demo Js -->
+    <script src="{{asset('q/js/demo.js')}}"></script>
+     <script src="{{asset('q/plugins/bootstrap-select/js/bootstrap-select.js')}}"></script>
+      <script src="{{asset('q/js/pages/forms/basic-form-elements.js')}}"></script>
 
-    <script src="/ninja/light/assets/scripts/jquery.min.js"></script>
-    <script src="/ninja/light/assets/scripts/modernizr.min.js"></script>
-    <script src="/ninja/light/assets/plugin/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/ninja/light/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="/ninja/light/assets/plugin/nprogress/nprogress.js"></script>
-    <script src="/ninja/light/assets/plugin/sweet-alert/sweetalert.min.js"></script>
-    <script src="/ninja/light/assets/plugin/waves/waves.min.js"></script>
-    <!-- Full Screen Plugin -->
-    <script src="/ninja/light/assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
-
-    <script src="/ninja/light/assets/scripts/sweetalert.init.min.js"></script>
 </body>
+
 </html>
-
-<script type="text/javascript"> 
-    $(document).ready(function () {
-        $('#table-datatables').DataTable({
-            dom: 'Bfrtip',
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        });
-    });
-</script>
-
-
-<script type="text/javascript">
-    var elems = document.getElementsByClassName('hapus');
-    var confirmIt = function (e) {
-        if (!confirm('Apakah Anda Yakin Ingin Menghapus nya?')) e.preventDefault();
-    };
-    for (var i = 0, l = elems.length; i < l; i++) {
-        elems[i].addEventListener('click', confirmIt, false);
-    }
-</script>

@@ -15,9 +15,10 @@
         <form action="/kategori/add" method="POST" enctype="multipart/form-data">
           @csrf
           <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Kategori</label>
-            <input type="text" class="form-control" name="nama" id="recipient-name" required="">
-          </div>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Nama Kategori" name="nama" />
+                                        </div>
+                                    </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary">Tambah</button>
@@ -73,10 +74,10 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header-index" style="display: flex; justify-content: space-between; align-items: center;">
-      <h6 class="m-0 font-weight-bold"><strong>Data Kategori Barang</strong></h6>
+      <h2 class="m-0 font-weight-bold"><strong>Data Kategori Barang</strong></h2>
         <a href="#modaladd" data-toggle="modal">
       <button  class="btn btn-primary btn-sm waves-effect waves-light">
-          <i class="fas fa-plus"></i>
+          Tambah
       </button>
         </a>
     </div><br>
@@ -97,10 +98,10 @@
               <td>{{$j->nama}}</td>
               <td>
                 <a data-toggle="modal" data-target="#EditJurusan{{$j->id}}" class="btn btn-warning btn-sm waves-effect waves-light">
-                  <i class="far fa-edit"></i>
+                  Edit
                 </a>
                 <a href="/kategori/delete/{{$j->id}}" class="btn btn-orange btn-sm waves-effect waves-light">
-                  <i class="far fa-trash-alt"></i>
+                 Delete
                 </a>
               </td>
             </tr>

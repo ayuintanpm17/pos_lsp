@@ -17,15 +17,15 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header-index" style="display: flex; justify-content: space-between; align-items: center;">
-      <h6 class="m-0 font-weight-bold"><strong>Data Pengguna</strong></h6>
+      <h3 class="m-0 font-weight-bold"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Data Pengguna</strong></h3>
         <a href="/pengguna/tambah" data-toggle="modal">
-      <button h class="btn btn-outline-primary">
-          <i class="fas fa-plus"></i>
+      <button h class="btn btn-primary">
+          Tambah Pengguna
       </button>
         </a>
     </div><br>
     <div class="card-body">
-      <div class="table-responsive">
+      <div class="body table-responsive">
         <table class="table table-bordered" id="Table" width="100%" cellspacing="0">
           <thead>
             <tr>

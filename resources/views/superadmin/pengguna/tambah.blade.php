@@ -3,43 +3,48 @@
 
 <!-- DataTales Example -->
 
-<div id="wrapper">
-  <div class="main-content">
-    <div class="row small-spacing">
-
-
-
-<form  method="POST" action="{{route('pengguna_proses_tambah')}}" enctype="multipart/form-data">
-        		@csrf
-        	<div class="box-content" style="width: 90%;">
-        		<div class="box-title">
-        			<h4>Data Barang</h4>
-        		</div>
-
-		        <div class=" col-xs-12">
+  <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                DATA BARANG
+                                <small>Different sizes and widths</small>
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <br>	
+                            <br>	
+                            <form method="POST" action="{{route('pengguna_proses_tambah')}}" enctype="multipart/form-data" >
+                            	@csrf
 		          <input type="text" name="name" class="form-control" placeholder="Nama" required><br>
 		          <input type="email" name="email" class="form-control" placeholder="Email" required><br>
 		          <input type="password" name="password" class="form-control" placeholder="Password" required><br>
-
-	      				<div class="row">
-				            <div class="col-12 col-md-6">
-				            	<select class="form-control" name="role" required>
-			                		<option value="">Hak Akses</option>
+		           <div class="col-sm-6">
+                                    
+                                    <select class="form-control show-tick" name="role" required="">
+                                       <option value="">Hak Akses</option>
 			                		<option value="2">Super Admin</option>
 			                		<option value="1">Admin</option>
 			                		<option value="0">Kasir</option>
-		            			</select>	
-				            </div>
-			        	</div>
-		        </div><br>
+
+                                    </select>
+                                </div>
          		<button type="submit" class="btn btn-primary add" style="float: right;">Tambah</button>
 		    </div><br>
 		    </form>
 
+                        </div>
 
-
-   	</div>
-  </div>
-</div>
 
 @endsection
