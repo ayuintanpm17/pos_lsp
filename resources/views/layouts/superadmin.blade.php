@@ -19,6 +19,7 @@
 
     <!-- Waves Effect Css -->
     <link href="{{asset('q/plugins/node-waves/waves.css')}}" rel="stylesheet" />
+    <link href="{{asset('fontawesome/font-awesome/css/all.css')}}" rel="stylesheet">
 
     <!-- Animation Css -->
     <link href="{{asset('q/plugins/animate-css/animate.css')}}" rel="stylesheet" />
@@ -305,7 +306,7 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li class="active">
-                        <a href="index.html">
+                        <a href="/superadmin">
                             <i class="material-icons">home</i>
                             <span>Dashboard</span>
                         </a>

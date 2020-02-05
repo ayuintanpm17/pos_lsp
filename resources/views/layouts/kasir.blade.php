@@ -25,6 +25,7 @@
 
     <!-- Morris Chart Css-->
     <link href="{{asset('q/plugins/morrisjs/morris.css')}}" rel="stylesheet" />
+    <link href="{{asset('fontawesome/font-awesome/css/all.css')}}" rel="stylesheet">
 
     <!-- Custom Css -->
     <link href="{{asset('q/css/style.css')}}" rel="stylesheet">
@@ -305,7 +306,7 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li class="active">
-                        <a href="index.html">
+                        <a href="/kasir">
                             <i class="material-icons">home</i>
                             <span>Dashboard</span>
                         </a>

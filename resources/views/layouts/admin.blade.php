@@ -29,6 +29,8 @@
     <!-- Custom Css -->
     <link href="{{asset('q/css/style.css')}}" rel="stylesheet">
 
+    <link href="{{asset('fontawesome/font-awesome/css/all.css')}}" rel="stylesheet">
+
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="{{asset('q/css/themes/all-themes.css')}}" rel="stylesheet" />
 </head>
@@ -305,7 +307,7 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li class="active">
-                        <a href="index.html">
+                        <a href="/admin">
                             <i class="material-icons">home</i>
                             <span>Dashboard</span>
                         </a>
