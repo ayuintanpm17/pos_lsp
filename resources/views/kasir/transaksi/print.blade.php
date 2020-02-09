@@ -18,7 +18,7 @@
           <div class="box-content" id="section-to-print">
         	<div class="title" style="text-align: center;">
         	<h4>Bukti Pembayaran</h4>
-        	<h4>POS ANDREA <h4>
+        	<h4>Point Of Sale Tane<h4>
         	</div><br>
 
 		<table class="table table-bordered">

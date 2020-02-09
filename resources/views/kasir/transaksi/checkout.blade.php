@@ -14,7 +14,7 @@
 
         	<div class="col-lg-12 col-xs-12">
 				<div class="box-content card white">
-					<h4 class="box-title">Metode Pembayaran</h4>
+					<h4 class="box-title">&nbsp;&nbsp;&nbsp;Metode Pembayaran</h4>
 					<div class="card-content">
 						<form action="{{route('transaksi_proses_checkout')}}" method="POST">
 							@csrf
@@ -36,7 +36,7 @@
 
 			<div class="col-lg-12 col-xs-12">
     			<div class="box-content card white">
-					<h4 class="box-title">Item</h4>
+					<h4 class="box-title">&nbsp;&nbsp;&nbsp;Item</h4>
     			<div class="panel-body">
     				<div class="table-responsive">
     					<table class="table table-condensed">

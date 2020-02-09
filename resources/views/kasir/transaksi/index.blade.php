@@ -15,7 +15,7 @@
 
 <div class="col-lg-12 col-xs-12" style="padding-top: 2%;">
 				<div class="box-content card white">
-					<h4 class="box-title">Cari Barang</h4>
+					<h4 class="box-title">&nbsp;&nbsp;&nbsp;Cari Barang</h4>
 					<!-- /.box-title -->
 					<div class="card-content">
 						<form action="{{route('transaksi_proses_transaksi')}}" method="POST">
@@ -30,7 +30,7 @@
 			        		</div>
 		          <input type="text" name="jumlah" class="form-control" placeholder="Banyak Item" required=""><br>
 
-		    <button type="submit" class="btn btn-icon btn-icon-left btn-primary btn-sm waves-effect waves-light"><i class="ico fa fa-cart-plus"></i>Tambah</button>
+		    <button type="submit" class="btn btn-icon btn-icon-left btn-primary btn-sm waves-effect waves-light">&nbsp;&nbsp;<i class="ico fa fa-cart-plus"></i>&nbsp;&nbsp;Tambah</button>
 						</form>
 					</div>
 					<!-- /.card-content -->
@@ -62,7 +62,7 @@
 
     	<div class="col-lg-12 col-xs-12">
     			<div class="box-content card white">
-					<h4 class="box-title">Item</h4>
+					<h4 class="box-title">&nbsp;&nbsp;&nbsp;Item</h4>
     			<div class="panel-body">
     				<div class="table-responsive">
     					<table class="table table-condensed">

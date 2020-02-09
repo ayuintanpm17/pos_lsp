@@ -73,10 +73,10 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header-index" style="display: flex; justify-content: space-between; align-items: center;">
-      <h6 class="m-0 font-weight-bold"><strong>Data Mata Uang</strong></h6>
+      <h4 class="m-0 font-weight-bold"><strong>&nbsp;&nbsp;Data Mata Uang</strong></h4>
         <a href="#modaladd" data-toggle="modal">
       <button class="btn btn-primary btn-sm waves-effect waves-light">
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus"></i>&nbsp;Tambah
       </button>
         </a>
     </div><br>

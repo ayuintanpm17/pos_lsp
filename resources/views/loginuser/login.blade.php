@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Sign In | Bootstrap Based Admin Template - Material Design</title>
+    <title>Sign In | PosTane</title>
     <!-- Favicon-->
     <link rel="icon" href="/q/favicon.ico" type="image/x-icon">
 
@@ -28,14 +28,14 @@
 <body class="login-page">
     <div class="login-box">
         <div class="logo">
-            <a href="javascript:void(0);">Admin<b>BSB</b></a>
-            <small>Admin BootStrap Based - Material Design</small>
+            <a href="javascript:void(0);">POS<b>Tane</b></a>
+            <small>SMKN 10 JAKARTA</small>
         </div>
         <div class="card">
             <div class="body">
                 <form id="sign_in" method="POST" action="/loginuser/proses-login">
                     @csrf
-                    <div class="msg">Sign in to start your session</div>
+                    <div class="msg">Sign in</div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>

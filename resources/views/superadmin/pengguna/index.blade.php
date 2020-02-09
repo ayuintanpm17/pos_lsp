@@ -21,7 +21,7 @@
         <a href="/pengguna/tambah" data-toggle="modal">
       <button h class="btn btn-primary">
           Tambah Pengguna
-      </button>
+      </button>&nbsp;&nbsp;&nbsp;&nbsp;
         </a>
     </div><br>
     <div class="card-body">
@@ -49,7 +49,7 @@
                @else
                <td>Super Admin</td>
                @endif
-               <td><a href="{{route('pengguna_hapus', $penggunas->id)}}" class="hapus"><i class="fa fa-trash-o" aria-hidden="true" title="Hapus"></i></a></td>
+               <td><a href="{{route('pengguna_hapus', $penggunas->id)}}" class="hapus"><i class="fa fa-trash-o" aria-hidden="true" title="Hapus"></i>Hapus</a></td>
             </tr>
             @endforeach
           </tbody>

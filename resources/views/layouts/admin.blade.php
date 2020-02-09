@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+    <title>Welcome To | Pointb Of Sale Tane</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -286,7 +286,7 @@
          ?>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{$name->name}}</div>
-                    <div class="email">SuperAdmin</div>
+                    <div class="email">Admin</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -318,12 +318,12 @@
                             <span>Master</span>
                         </a>
                         <ul class="ml-menu">
-                          <li><a href="/kategori">Kategori Barang</a></li>
-                        <li><a href="/unit">Unit</a></li>
-                        <li><a href="/diskon">Diskon</a></li>
-                        <li><a href="/cur">Mata Uang</a></li>
-                        <li><a href="/laba">Laba Keuntungan</a></li>
-                        <li><a href="/stokppn">Stok Minimal & PPN</a></li>
+                          <li><a href="/kategori"><i class="fa fa-indent" aria-hidden="true"></i>&nbsp;Kategori Barang</a></li>
+                        <li><a href="/unit"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Unit</a></li>
+                        <li><a href="/diskon"><i class="fa fa-percent" aria-hidden="true"></i>&nbsp;Diskon</a></li>
+                        <li><a href="/cur"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Mata Uang</a></li>
+                        <li><a href="/laba"><i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;Laba Keuntungan</a></li>
+                        <li><a href="/stokppn"><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Stok Minimal & PPN</a></li>
                                 </ul>
                             </li>
                               <li>

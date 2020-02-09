@@ -6,7 +6,7 @@
 <div id="wrapper">
   <div class="main-content">
     <div class="row small-spacing">
-
+      <div class="card">
       <div class="row" style="display: flex; justify-content: space-between; align-items: center;">
       <div class="box-content" style="width: 90%;">
         <h5 style="text-align: center; font-family:Monaco; color: blue; font-size: 30px;">Informasi Toko</h5>
@@ -51,6 +51,7 @@
       </div>
 
 
+</div>
     </div>
   </div>
 </div>

@@ -4,13 +4,14 @@
 <!-- DataTales Example -->
 
 <div id="wrapper">
+	<div class="card">
     <div class="main-content">
         <div class="row small-spacing">
         	<form  method="POST" action="{{route('proses_detail')}}">
         		@csrf
         	<div class="box-content" style="width: 90%;">
         		<div class="box-title">
-        			<h4>Data Barang</h4>
+        			<h4>&nbsp;&nbsp;&nbsp;&nbsp;Data Barang</h4>
         		</div>
         		<input type="hidden" name="barcode" value="{{$produk->barcode}}">
 
@@ -111,6 +112,7 @@
 
 
 
+		</div>
        	</div>
 	</div>
 </div>

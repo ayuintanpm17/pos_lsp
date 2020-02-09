@@ -7,15 +7,15 @@
     <div class="main-content">
         <div class="row small-spacing">
 <div class="col-xs-12">
-        <div class="box-content">
+        <div class="card">
           <div class="box-title" style="display: flex; justify-content: space-between; align-items: center;">
-          <h4 class="box-title">Data Barang</h4>
+          <h4 class="box-title">&nbsp;&nbsp;&nbsp;Data Barang</h4>
           <a href="/barang/tambah">
           <button class="btn btn-primary btn-sm waves-effect waves-light">
-            <i class="fas fa-plus"></i>
-          </button>
+            <i class="fas fa-plus"></i>Tambah
+          </button>&nbsp;&nbsp;&nbsp;
         </a>
-          </div>
+          </div><br><br>
           <!-- /.dropdown js__dropdown -->
           <table id="example-scroll-y" class="table table-striped table-bordered display" style="width:100%">
             <thead>
@@ -52,6 +52,7 @@
           </table>
         </div>
         <!-- /.box-content -->
+      </div>
       </div>
 
 </div>

@@ -4,13 +4,14 @@
 <!-- DataTales Example -->
 
 <div id="wrapper">
+	<div class="card">
     <div class="main-content">
         <div class="row small-spacing">
         	<form  method="POST" action="/barang/add">
         		@csrf
         	<div class="box-content" style="width: 90%;">
         		<div class="box-title">
-        			<h4>Data Barang</h4>
+        			<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Barang</h4>
         		</div>
 
 		        <div class=" col-xs-12">
@@ -76,14 +77,14 @@
 					        </div>
 			        	</div><br>
 		          <textarea name="keterangan" placeholder="Keterangan" class="form-control" required=""></textarea>
-		        </div><br>
+		        </div><br><br>
          		<button type="submit" class="btn btn-primary btn-sm waves-effect waves-light" style="float: right;">Tambah</button>
 		    </div><br>
 		    </form>
 
 
 
-
+</div>
        	</div>
 	</div>
 </div>
